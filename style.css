@@ -1,0 +1,67 @@
+body {
+  align-items: center;
+  background-color: hsl(199, 81%, 94%);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.result {
+  width: 50%;
+  justify-content: right;
+  background-color: hsl(201, 54%, 16%);
+  margin-left: auto;
+  color: white;
+  border-radius: 0px 10px 10px 50px;
+}
+
+.mortgage-calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mortgage-amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  width: 200px;
+}
+
+.input-container::before {
+  align-items: center;
+  background-color: hsl(199, 81%, 94%);
+  border-radius: 3px 0px 0px 3px;
+  color: hsl(75, 48%, 27%);
+  content: "£";
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  height: 97%;
+  justify-content: center;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  transform: none;
+  width: 30px;
+}
+
+.mortgage-amount input {
+  border-radius: 3px;
+  border: solid 1px hsl(200, 26%, 54%);
+  box-sizing: border-box;
+  height: 40px;
+  width: 300px;
+}
