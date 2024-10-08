@@ -184,3 +184,11 @@ button {
   text-align: center;
   justify-content: center;
 }
+
+.calculated-result {
+  display: none;
+}
+
+.selectedTypeText {
+  display: none;
+}
