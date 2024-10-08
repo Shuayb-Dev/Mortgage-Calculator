@@ -45,7 +45,7 @@
               <input
                 type="radio"
                 name="mortgage-type"
-                id="mortgage-type"
+                id="repayment"
                 value="repayment"
               />
               <p>Repayment</p>
@@ -55,19 +55,19 @@
               <input
                 type="radio"
                 name="mortgage-type"
-                id="mortgage-type"
+                id="intrest-only"
                 value="intrest-only"
               />
               <p>Interest Only</p>
             </div>
           </div>
-          <button onclick="calculate()">
+          <button type="button" onclick="calculate(), checkMortgageType()">
             <img src="images/icon-calculator.svg" alt="calculator" />
             Calculate Repayments
           </button>
         </form>
 
-        <div class="result">
+        <div class="result" id="result">
           <div class="result-text">
             <img src="images/illustration-empty.svg" alt="empty" />
             <h1>Result Shown Here</h1>
@@ -78,6 +78,12 @@
             </p>
           </div>
         </div>
+
+        <div class="calculated-result" id="calculated-result">
+          CALCULATED RESULTS
+        </div>
+
+        <div class="selected-type" id="selectedTypeText"></div>
       </div>
     </main>
   </body>
