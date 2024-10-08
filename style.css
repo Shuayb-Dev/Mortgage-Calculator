@@ -9,25 +9,28 @@ body {
 form {
   padding-left: 10px;
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .result {
-  width: 50%;
-  justify-content: right;
   background-color: hsl(201, 54%, 16%);
-  margin-left: auto;
-  color: white;
   border-radius: 0px 10px 10px 50px;
+  color: white;
+  justify-content: right;
+  margin-left: auto;
+  width: 50%;
 }
 
 .mortgage-calculator {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 400px;
-  width: 800px;
   display: flex;
   flex-direction: row;
+  height: 550px;
+  width: 800px;
 }
 
 .mortgage-amount {
@@ -49,7 +52,7 @@ form {
   display: flex;
   font-size: 16px;
   font-weight: 600;
-  height: 97%;
+  height: 93%;
   justify-content: center;
   left: 1px;
   position: absolute;
@@ -64,4 +67,120 @@ form {
   box-sizing: border-box;
   height: 40px;
   width: 300px;
+}
+
+.terms-rate {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.term-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.term-container input {
+  height: 40px;
+}
+
+.input-container-two {
+  position: relative;
+}
+
+.input-container-two::after {
+  align-items: center;
+  background-color: hsl(199, 81%, 94%);
+  border-radius: 3px 0px 0px 0px;
+  color: #555;
+  content: "years";
+  display: flex;
+  font-size: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 93%;
+  justify-content: center;
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+}
+
+.input-container-three {
+  position: relative;
+}
+
+.input-container-three::after {
+  align-items: center;
+  background-color: hsl(199, 81%, 94%);
+  border-radius: 3px 0px 0px 0px;
+  color: #555;
+  content: "%";
+  display: flex;
+  font-size: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 93%;
+  justify-content: center;
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+}
+
+.mortgage-type-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.repayment p,
+.intrest-only p {
+  display: inline;
+  left: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.repayment,
+.intrest-only {
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid hsl(200, 26%, 54%);
+  display: flex;
+  height: 40px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  text-align: center;
+}
+
+.result-text img,
+.result-text h1,
+.result-text p {
+  position: relative;
+  top: 80px;
+}
+
+button {
+  background-color: hsl(61, 71%, 52%);
+  border-radius: 3px;
+  border: none;
+  color: hsl(189, 43%, 15%);
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  top: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }

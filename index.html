@@ -12,6 +12,7 @@
       <div class="mortgage-calculator">
         <form>
           <div class="mortgage-amount">
+            <h1>Mortgage Calculator</h1>
             <label for="mortgage-amount">Mortgage Amount</label>
             <div class="input-container">
               <input
@@ -21,10 +22,61 @@
               />
             </div>
           </div>
+
+          <div class="terms-rate">
+            <div class="term-container">
+              <label for="terms">Mortgage Term</label>
+              <div class="input-container-two">
+                <input type="number" name="terms" id="terms" />
+              </div>
+            </div>
+
+            <div class="term-container">
+              <label for="rate">Interest Rate</label>
+              <div class="input-container-three">
+                <input type="number" name="rate" id="rate" />
+              </div>
+            </div>
+          </div>
+
+          <div class="mortgage-type-container">
+            <label for="mortgage-type">Mortgage Type</label>
+            <div class="repayment">
+              <input
+                type="radio"
+                name="mortgage-type"
+                id="mortgage-type"
+                value="repayment"
+              />
+              <p>Repayment</p>
+            </div>
+
+            <div class="intrest-only">
+              <input
+                type="radio"
+                name="mortgage-type"
+                id="mortgage-type"
+                value="intrest-only"
+              />
+              <p>Interest Only</p>
+            </div>
+          </div>
+          <button onclick="calculate()">
+            <img src="images/icon-calculator.svg" alt="calculator" />
+            Calculate Repayments
+          </button>
         </form>
 
         <div class="result">
-          <h1>Result Shown Here</h1>
+          <div class="result-text">
+            <img src="images/illustration-empty.svg" alt="empty" />
+            <h1>Result Shown Here</h1>
+            <p>
+              Complete the form and click "calculate repayments" to
+              <br />
+              what your monthly repayments would be.
+            </p>
+          </div>
         </div>
       </div>
     </main>
