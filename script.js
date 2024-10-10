@@ -2,6 +2,8 @@ function calculate() {
   //Shows the result
   let showresult = document.getElementById("calculated-result");
 
+  //This is a placeholder
+
   //Takes User Inputs
   let userInput = document.getElementById("mortgage-amount").value;
   let terms = document.getElementById("terms").value;
