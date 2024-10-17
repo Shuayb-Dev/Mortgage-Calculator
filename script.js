@@ -31,3 +31,5 @@ function checkMortgageType() {
     selectedTypeText.style.innerHTML = "Please select a type";
   }
 }
+
+//Starting Logic
