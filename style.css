@@ -67,6 +67,7 @@ form {
   box-sizing: border-box;
   height: 40px;
   width: 300px;
+  padding-left: 32px;
 }
 
 .terms-rate {
