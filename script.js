@@ -1,18 +1,16 @@
 // Function to calculate user input values
 function calculate() {
-  //Shows the result
-  let showresult = document.getElementById("calculated-result");
+  // Takes User Inputs
+  let userInput = parseFloat(document.getElementById("mortgage-amount").value);
+  let terms = parseFloat(document.getElementById("terms").value);
+  let rate = parseFloat(document.getElementById("rate").value);
+  let result = document.getElementById("result");
 
-  //This is a placeholder
+  // Turns final rate into percentage
+  let finalrate = rate / 100;
 
-  //Takes User Inputs
-  let userInput = document.getElementById("mortgage-amount").value;
-  let terms = document.getElementById("terms").value;
-  let rate = document.getElementById("rate").value;
-
-  document.getElementById("result").style.display = "none";
-  showresult.style.display = "block";
-  showresult.innerHTML = userInput;
+  // Return an object with the inputs
+  return { userInput, terms, finalrate, result };
 }
 
 // Function to check mortgage type and perform calculation
@@ -56,11 +54,9 @@ function checkMortgageType() {
 
     selectedTypeText.style.display = "block";
     selectedTypeText.innerHTML = `Repayment Amount: 
-    <br /> 
+    <br />
     £${sum.toFixed(2)} per month`;
   } else {
     selectedTypeText.innerHTML = "Please select a valid mortgage type";
   }
 }
-
-//Starting Logic
