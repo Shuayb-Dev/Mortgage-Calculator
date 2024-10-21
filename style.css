@@ -193,3 +193,17 @@ button {
 .selectedTypeText {
   display: none;
 }
+
+.total-payment {
+  display: none;
+  position: relative;
+  top: 50px;
+  right: 210px;
+}
+
+.total-repayment {
+  display: none;
+  position: relative;
+  top: 50px;
+  left: -195px;
+}
