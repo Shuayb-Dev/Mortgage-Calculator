@@ -22,6 +22,7 @@ function checkMortgageType() {
   let selectedTypeText = document.getElementById("selectedTypeText");
   let totalPayment = document.getElementById("totalPayment");
   let totalRepayment = document.getElementById("totalRepayment");
+  let finalResult = document.getElementById("finalResult");
 
   // Clear previous result text
   selectedTypeText.innerHTML = "";
@@ -35,6 +36,8 @@ function checkMortgageType() {
   if (isNaN(userInput) || isNaN(terms) || isNaN(finalrate)) {
     selectedTypeText.innerHTML = "Please provide valid inputs!";
     return;
+  } else {
+    finalResult.style.display = "block";
   }
 
   // Get the selected mortgage type

@@ -186,24 +186,31 @@ button {
   justify-content: center;
 }
 
-.calculated-result {
+#selectedTypeText {
+  color: red;
   display: none;
-}
-
-.selectedTypeText {
-  display: none;
+  position: relative;
+  top: 250px;
+  left: 100px;
 }
 
 .total-payment {
   display: none;
   position: relative;
-  top: 50px;
-  right: 210px;
+  top: 380px;
+  right: 245px;
 }
 
 .total-repayment {
   display: none;
   position: relative;
-  top: 50px;
-  left: -195px;
+  top: 380px;
+  right: 245px;
+}
+
+.finalresult {
+  display: none;
+  width: 700px;
+  position: relative;
+  right: 60px;
 }
