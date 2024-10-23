@@ -19,7 +19,7 @@ form {
   border-radius: 0px 10px 10px 50px;
   color: white;
   justify-content: right;
-  margin-left: auto;
+  margin-left: 30px;
   width: 50%;
 }
 
@@ -161,6 +161,7 @@ form {
   justify-content: center;
   text-align: justify;
   text-align: center;
+  width: 100%;
 }
 
 .result-text img,
@@ -187,30 +188,65 @@ button {
 }
 
 #selectedTypeText {
-  color: red;
   display: none;
-  position: relative;
-  top: 250px;
-  left: 100px;
 }
 
 .total-payment {
   display: none;
   position: relative;
-  top: 380px;
-  right: 245px;
 }
 
 .total-repayment {
   display: none;
   position: relative;
-  top: 380px;
-  right: 245px;
+}
+
+h1 {
+  color: hsl(205, 40%, 16%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.mortgage-calculator {
+  color: hsl(205, 40%, 16%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+}
+
+.payment-contaienr {
+  border: solid 1px red;
+  bottom: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  z-index: 2;
+}
+
+h2 {
+  position: relative;
+  top: 80px;
+}
+
+.title {
+  position: relative;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
 }
 
 .finalresult {
   display: none;
-  width: 700px;
   position: relative;
-  right: 60px;
+  width: 100%;
+  margin-left: 30px;
+  background-color: hsl(201, 54%, 16%);
+  position: relative; /* Ensure it can be layered */
+
+  z-index: 1; /* Optional: Higher layers over elements below */
+  color: white; /* Ensure text is visible over the dark background */
+  /* Add padding to avoid text touching edges */
 }
