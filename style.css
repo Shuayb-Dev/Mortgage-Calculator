@@ -40,7 +40,7 @@ form {
 
 .input-container {
   position: relative;
-  width: 200px;
+  width: 380px;
 }
 
 .input-container::before {
@@ -66,7 +66,7 @@ form {
   border: solid 1px hsl(200, 26%, 54%);
   box-sizing: border-box;
   height: 40px;
-  width: 300px;
+  width: 383px;
   padding-left: 32px;
 }
 
@@ -213,16 +213,20 @@ h1 {
 }
 
 .payment-contaienr {
-  border: solid 1px red;
-  bottom: 300px;
+  background-color: hsl(202, 56%, 12%);
+  border-top: 5px solid hsl(61, 71%, 53%);
+  border-radius: 3px;
+  bottom: 350px;
   color: white;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 250px;
   margin: auto;
   position: relative;
-  top: 100px;
+  top: 50px;
+  width: 350px;
   z-index: 2;
+  border-radius: 10px;
 }
 
 h2 {
@@ -238,6 +242,12 @@ h2 {
   color: white;
 }
 
+.title,
+.finalresult p {
+  position: relative;
+  left: 15px;
+}
+
 .finalresult {
   display: none;
   position: relative;
@@ -245,8 +255,52 @@ h2 {
   margin-left: 30px;
   background-color: hsl(201, 54%, 16%);
   position: relative; /* Ensure it can be layered */
-
+  border-radius: 10px 10px 10px 50px;
   z-index: 1; /* Optional: Higher layers over elements below */
   color: white; /* Ensure text is visible over the dark background */
-  /* Add padding to avoid text touching edges */
+}
+
+.selected-type span {
+  color: hsl(61, 71%, 52%);
+  font-size: 45px;
+  font-weight: 550;
+  position: relative;
+  top: 5px;
+}
+
+.total-repayment span {
+  color: white;
+  font-size: 25px;
+  font-weight: 550;
+  position: relative;
+  top: 5px;
+}
+
+.selected-type,
+.total-payment,
+.total-repayment {
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+
+.total-repayment,
+.total-payment {
+  position: relative;
+  top: 60px;
+}
+
+h3 {
+  position: relative;
+  top: 60px;
+}
+
+hr {
+  position: relative;
+  top: 40px;
+  width: 85%;
+  margin-left: 30px; /* Specify unit */
+  background-color: #eee;
+  border: none; /* No border */
+  height: 1px; /* Thin line */
 }

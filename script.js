@@ -58,7 +58,7 @@ function checkMortgageType() {
     // Interest-only mortgage calculation
     sum = (userInput * finalrate) / 12;
     selectedTypeText.style.display = "block";
-    selectedTypeText.innerHTML = `Monthly Interest Only Payment: 
+    selectedTypeText.innerHTML = `Your monthly repayments: 
     <br />
     £${sum.toFixed(2)} per month`;
 
@@ -76,16 +76,16 @@ function checkMortgageType() {
       (userInput * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -numPayments));
 
     selectedTypeText.style.display = "block";
-    selectedTypeText.innerHTML = `Monthly Repayment Amount: 
+    selectedTypeText.innerHTML = `Your monthly repayments 
     <br />
-    £${sum.toFixed(2)} per month`;
+    <span>£${sum.toFixed(2)}</span>`;
 
     // Display total payment
     totalRepayment.style.display = "block";
     totalRepayment.innerHTML = `
-    Total Payment: 
+    Total you'll repay over the term: 
     <br />
-    £${(sum * 12 * terms).toFixed(2)} `;
+     <span>£${(sum * 12 * terms).toFixed(2)} <span> `;
   } else {
     selectedTypeText.innerHTML = "Please select a valid mortgage type";
   }
