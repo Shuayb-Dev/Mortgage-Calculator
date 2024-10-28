@@ -276,6 +276,14 @@ h2 {
   top: 5px;
 }
 
+.total-payment span {
+  color: white;
+  font-size: 25px;
+  font-weight: 550;
+  position: relative;
+  top: 5px;
+}
+
 .selected-type,
 .total-payment,
 .total-repayment {
@@ -296,8 +304,8 @@ h3 {
 }
 
 hr {
-  position: relative;
-  top: 40px;
+  position: absolute;
+  top: 105px;
   width: 85%;
   margin-left: 30px; /* Specify unit */
   background-color: #eee;

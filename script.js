@@ -60,14 +60,14 @@ function checkMortgageType() {
     selectedTypeText.style.display = "block";
     selectedTypeText.innerHTML = `Your monthly repayments: 
     <br />
-    £${sum.toFixed(2)} per month`;
+    <span>£${sum.toFixed(2)}<span>`;
 
     // Display total payment
     totalPayment.style.display = "block";
     totalPayment.innerHTML = `
-    Total Payment: 
+    Total you'll repay over the term:  
     <br />
-    £${(sum * 12 * terms).toFixed(2)} `;
+    <span>£${(sum * 12 * terms).toFixed(2)}<span> `;
   } else if (selectedType.value === "repayment") {
     // Repayment mortgage calculation
     let monthlyRate = finalrate / 12;
