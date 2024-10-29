@@ -312,3 +312,50 @@ hr {
   border: none; /* No border */
   height: 1px; /* Thin line */
 }
+
+@media screen and (max-width: 600px) {
+  .mortgage-calculator {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 800px;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .mortgage-amount input {
+    border-radius: 3px;
+    border: solid 1px hsl(200, 26%, 54%);
+    box-sizing: border-box;
+    height: 40px;
+    width: 300px;
+    padding-left: 32px;
+  }
+
+  .result {
+    position: relative;
+    top: 65px;
+    right: 30px;
+    border-radius: 0px 0px 10px 0px;
+    height: 1500px !important;
+  }
+
+  .result img {
+    position: relative;
+    height: 130px;
+  }
+
+  button {
+    position: relative;
+    z-index: 1;
+  }
+
+  .terms-rate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mortgage-type-container {
+    width: 180px;
+  }
+}
