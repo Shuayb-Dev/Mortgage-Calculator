@@ -314,6 +314,11 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
+  form {
+    position: relative;
+    left: 30px;
+  }
+
   .mortgage-calculator {
     display: flex;
     flex-direction: column;
@@ -356,6 +361,129 @@ hr {
   }
 
   .mortgage-type-container {
-    width: 180px;
+    width: 293px;
+  }
+
+  .input-container::before {
+    align-items: center;
+    background-color: hsl(199, 81%, 94%);
+    border-radius: 3px 0px 0px 3px;
+    color: hsl(75, 48%, 27%);
+    content: "£";
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    height: 93%;
+    justify-content: center;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    transform: none;
+    width: 30px;
+  }
+
+  .input-container-three::after {
+    align-items: center;
+    background-color: hsl(199, 81%, 94%);
+    border-radius: 3px 0px 0px 0px;
+    color: #555;
+    content: "%";
+    display: flex;
+    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 93%;
+    justify-content: center;
+    position: absolute;
+    right: 73px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+  }
+
+  .input-container-two::after {
+    align-items: center;
+    background-color: hsl(199, 81%, 94%);
+    border-radius: 3px 0px 0px 0px;
+    color: #555;
+    content: "years";
+    display: flex;
+    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 93%;
+    justify-content: center;
+    position: absolute;
+    right: 73px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20%;
+  }
+
+  .term-container input {
+    width: 290px;
+  }
+
+  .result-text {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .finalresult {
+    border: none;
+    position: relative;
+    top: 80px;
+    right: 30px;
+  }
+
+  .selected-type span {
+    color: hsl(61, 71%, 52%);
+    font-size: 30px;
+    font-weight: 550;
+    position: relative;
+    top: 5px;
+  }
+
+  .total-repayment span {
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+    position: relative;
+    top: 5px;
+  }
+
+  .total-payment span {
+    color: white;
+    font-size: 25px;
+    font-weight: 550;
+    position: relative;
+    top: 5px;
+  }
+
+  .selected-type,
+  .total-payment,
+  .total-repayment {
+    position: relative;
+    left: 30px;
+    top: 20px;
+  }
+
+  .total-repayment,
+  .total-payment {
+    position: relative;
+    top: 60px;
+  }
+
+  .finalresult {
+    border: none;
+    border-radius: 0px;
+    padding-bottom: 30px;
+  }
+
+  .payment-contaienr {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    top: 0px;
   }
 }
