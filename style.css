@@ -395,7 +395,7 @@ hr {
     height: 93%;
     justify-content: center;
     position: absolute;
-    right: 73px;
+    right: 75px;
     top: 50%;
     transform: translateY(-50%);
     width: 20%;
@@ -414,7 +414,7 @@ hr {
     height: 93%;
     justify-content: center;
     position: absolute;
-    right: 73px;
+    right: 74px;
     top: 50%;
     transform: translateY(-50%);
     width: 20%;
@@ -485,5 +485,18 @@ hr {
     width: 300px;
     position: relative;
     top: 0px;
+  }
+
+  .mortgage-type-container input {
+    border: solid 1px hsl(200, 26%, 54%);
+  }
+
+  .term-container input {
+    border: solid 1px hsl(200, 26%, 54%);
+  }
+
+  .term-container:focus,
+  .term-container input:focus {
+    outline: none;
   }
 }
