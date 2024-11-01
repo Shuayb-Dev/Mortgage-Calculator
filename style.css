@@ -40,7 +40,7 @@ form {
 
 .input-container {
   position: relative;
-  width: 380px;
+  width: 390px;
 }
 
 .input-container::before {
@@ -59,14 +59,18 @@ form {
   top: 1px;
   transform: none;
   width: 30px;
+  z-index: 1;
+  top: 11px;
 }
 
 .mortgage-amount input {
+  position: relative;
+  top: 10px;
   border-radius: 3px;
   border: solid 1px hsl(200, 26%, 54%);
   box-sizing: border-box;
   height: 40px;
-  width: 383px;
+  width: 420px;
   padding-left: 32px;
 }
 
@@ -313,6 +317,24 @@ hr {
   height: 1px; /* Thin line */
 }
 
+input {
+  border-radius: 3px;
+  border: solid 1px hsl(200, 26%, 54%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+  color: hsl(189, 43%, 15%);
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  font-size: 15px;
+}
+
 @media screen and (max-width: 600px) {
   form {
     position: relative;
@@ -325,7 +347,7 @@ hr {
     width: 380px;
     height: 800px;
     position: relative;
-    bottom: 0px;
+    bottom: 15px;
   }
 
   .mortgage-amount input {
@@ -414,7 +436,7 @@ hr {
     height: 93%;
     justify-content: center;
     position: absolute;
-    right: 74px;
+    right: 75px;
     top: 50%;
     transform: translateY(-50%);
     width: 20%;
@@ -482,9 +504,9 @@ hr {
 
   .payment-contaienr {
     height: 200px;
-    width: 300px;
     position: relative;
     top: 0px;
+    width: 300px;
   }
 
   .mortgage-type-container input {
@@ -495,8 +517,39 @@ hr {
     border: solid 1px hsl(200, 26%, 54%);
   }
 
-  .term-container:focus,
-  .term-container input:focus {
+  input {
+    border-radius: 3px;
+    border: solid 1px hsl(200, 26%, 54%);
+  }
+
+  input:focus {
     outline: none;
+  }
+  hr {
+    background-color: #eee;
+    border: none; /* No border */
+    height: 1px; /* Thin line */
+    margin-left: 30px; /* Specify unit */
+    position: absolute;
+    top: 88px;
+    width: 85%;
+  }
+
+  .input-container::before {
+    align-items: center;
+    background-color: hsl(199, 81%, 94%);
+    border-radius: 3px 0px 0px 3px;
+    color: hsl(75, 48%, 27%);
+    content: "£";
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    height: 93%;
+    justify-content: center;
+    left: 1px;
+    position: absolute;
+    top: 11px;
+    transform: none;
+    width: 30px;
   }
 }
